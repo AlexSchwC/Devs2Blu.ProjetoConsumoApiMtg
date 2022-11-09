@@ -3,7 +3,9 @@ const URL_API = 'https://api.scryfall.com/cards/search?format=json&include_extra
 
 
 $(document).ready(() =>{
-    getCard();
+    $('#get-cartas').click((e)=>{
+        getCard();
+    })
 });
 
 const getCard = () =>{
@@ -16,6 +18,7 @@ const getCard = () =>{
             $('#get-cards').html(listCards);
 
             data.data.forEach((card, i) => {
+                //elementos HTML
                 let li = document.createElement('li');
                 let carta = document.createElement('div');
                 let cardHeader = document.createElement('div');
@@ -27,8 +30,9 @@ const getCard = () =>{
                 $(carta).addClass('card');
                 $(cardHeader).addClass('card-header');
                 $(cardHeader).addClass('card-body');
-                $(img).attr('src', card.image_uris.small);
 
+                //atributos
+                $(img).attr('src', card.image_uris.small);
                 $(li).attr(`card${i}`);
                 $(cardBody).html(`<h1>${card.name}</h1>`);
 
@@ -38,26 +42,8 @@ const getCard = () =>{
                 $(li).append(carta);
                 $(listCards).append(li);
 
-                //getIMG(URL_API, `card${i}`);
             });
         }
     })
 };
 
-const getIMG = (url, target) =>{
-    $.ajax({
-        url: url,
-        datatype: 'json',
-        success: (resp) =>{
-            let imgCard = document.createElement('img');
-
-            $(imgCard).attr('src', resp.data.image_uris.small);
-
-            //estilizando
-            $(imgCard).addClass('card-img-top');
-            $(imgCard).css({width: '256px'});
-            console.log('oi')
-            $(target).append(imgCard);
-        }
-    })
-}
