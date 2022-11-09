@@ -19,3 +19,7 @@ const loadFooter = () => {
     $('#body-wrapper').append(footer);
     getPagina('../views/footer.html', $('#footer-container'));
 }
+
+const loadHeader = () => {
+
+}
