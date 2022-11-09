@@ -19,7 +19,13 @@
       class="container-fluid p-0 d-flex flex-column"
       style="min-height: 100vh"
     >
-      <main class="container-fluid flex-grow-1"></main>
+      <main class="container-fluid flex-grow-1">
+        <form action="#" class="my-4">
+          <label for="input-perquisa-card"></label>
+          <input id="input-perquisa-card" type="text" />
+          <button id="btn-pesquisa-card">Pesquisar</button>
+        </form>
+      </main>
     </div>
     <div id="scripts">
       <!-- JQuery -->
@@ -34,7 +40,8 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"
       ></script>
-      <script type="module" src="./js/main.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./js/search.js"></script>
     </div>
   </body>
 </html>
