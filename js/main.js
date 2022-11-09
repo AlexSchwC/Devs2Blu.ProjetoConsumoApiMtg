@@ -1,4 +1,5 @@
-$('document').ready(() => {
+$('document').ready(() => { 
+    loadHeader();
     loadFooter();
 })
 
@@ -18,4 +19,12 @@ const loadFooter = () => {
     $(footer).attr('id', 'footer-container');
     $('#body-wrapper').append(footer);
     getPagina('../views/footer.html', $('#footer-container'));
+}
+
+const loadHeader = () => {
+    let header = document.createElement('header');
+    $(header).addClass('container-fluid align-self-start');
+    $(header).attr('id', 'header-container');
+    $('#body-wrapper').append(header);
+    getPagina('../views/header.html', $('#header-container'));
 }
