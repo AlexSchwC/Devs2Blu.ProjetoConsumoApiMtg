@@ -2,7 +2,9 @@
   class="d-flex flex-row align-items-center justify-content-between p-3 custom-header"
 >
   <div class="d-flex flex-row">
-    <h2 class="ms-4 mb-0">Magikards</h2>
+    <a id="a-logo" href="../index.html">
+      <h2 class="ms-4 mb-0">Magikards</h2>
+    </a>
     <button
       id="menubutton"
       class="btn bg-white dropdown-toggle"
@@ -14,28 +16,35 @@
     </button>
     <div class="dropdown">
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Home</a></li>
-        <li><a class="dropdown-item" href="">Galeria</a></li>
-        <li><a class="dropdown-item" href="./sobre.html">Sobre</a></li>
+        <li><a class="dropdown-item" href="/index.html">Home</a></li>
+        <li>
+          <a class="dropdown-item" href="/views/galeria.html">Galeria</a>
+        </li>
+        <li><a class="dropdown-item" href="/views/about.html">Sobre</a></li>
       </ul>
     </div>
   </div>
   <div class="">
-    <form id="searchtab" class="d-flex" role="search">
+    <div id="searchtab" class="d-flex">
       <input
+        id="input-perquisa-card"
         class="form-control me-3"
-        type="search"
+        type="text"
         placeholder="Pesquisar card"
-        aria-label="Search"
       />
-      <button class="btn bg-white" type="submit">
+      <button id="btn-pesquisa-card" class="btn bg-white" type="submit">
         <img id="searchicon" src="/images/lupa.png" alt="lupa" />
       </button>
-    </form>
+    </div>
   </div>
 </div>
-
+<script src="../js/search.js"></script>
 <style>
+  #a-logo {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .custom-header {
     background-color: #111111;
   }

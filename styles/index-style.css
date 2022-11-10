@@ -1,0 +1,22 @@
+@charset "UTC-8"; 
+#sobremagic{
+    display: flex;
+    justify-content: center;
+
+} 
+#imagemsobre{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 50%;
+}
+#titulosobre{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#textosobre > h2{
+    margin-top: 20px;
+}

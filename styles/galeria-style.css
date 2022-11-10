@@ -1,10 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Titillium+Web&display=swap');
 
 
-*{
-    font-family: 'Poppins', sans-serif;
-}
 body{
     background-color: #f0e8e8;
     overflow-x: hidden;
@@ -14,12 +10,12 @@ li{
     list-style: none;
 }
 
-.img-card{
+.img-custom{
     margin-left: 3.5em;
     width: 200px;
 }
 
-.img-card:hover{
+.img-custom:hover{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -42,7 +38,7 @@ li{
     background-color: grey;
 }
 
-h2{
+.card-header > h2 {
     font-size: 23px;
     color: #f0e8e8;
     text-align: center;

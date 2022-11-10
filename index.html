@@ -11,7 +11,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="/styles/index-style.css" />
   </head>
   <body>
     <div
@@ -19,12 +19,53 @@
       class="container-fluid p-0 d-flex flex-column"
       style="min-height: 100vh"
     >
-      <main class="container-fluid flex-grow-1">
-        <form action="#" class="my-4">
-          <label for="input-perquisa-card"></label>
-          <input id="input-perquisa-card" type="text" />
-          <button id="btn-pesquisa-card">Pesquisar</button>
-        </form>
+      <main class="p-0 container-fluid flex-grow-1">
+        <div id="sobremagic" class="d-flex flex-column">
+          <figure>
+            <img
+              id="imagemsobre"
+              src="/images/magic-banner-destaque.jpg"
+              alt="fundomagicpersonagenslogo"
+            />
+          </figure>
+          <h1 id="titulosobre">O que é Magic</h1>
+          <div class="row justify-content-center">
+            <div id="textosobre" class="col-10">
+              <p class="text-start fs-5 mb-5">
+                O card game Magic The Gathering é um dos mais antigos e bem
+                sucedidos TCG (Trading Card Game) do mercado. Mas o que a
+                maioria das pessoas não sabe, é sobre a história por trás do
+                jogo. Já se perguntou alguma vez “como eles criam as cartas?”,
+                “Como criam as coleções? Porque coleções temáticas?”, “Qual a
+                motivação por trás os temas?”, e o mais importante, na minha
+                opinião: De onde surgem as ilustrações e os textos de história
+                das cartas?
+              </p>
+              <p class="text-end fs-5 mb-5">
+                Pois bem, na verdade todas as cartas criadas em cada uma das
+                coleções, baseiam-se nos contos criados e escritos de cada uma
+                das edições! Então se pararmos para pensar, as cartas são na
+                verdade, seres; lugares; situações; acontecimentos e momentos
+                presentes em uma história de um livro.
+              </p>
+              <p class="text-start fs-5 mb-5">
+                Além do livro escrito para cada edição feita, tem-se também os
+                Artbooks dos blocos (o conjunto de edições da da mesma história,
+                tema) que contêm muitas ilustrações, explicações sobre as
+                mesmas. O que são na história e como surgiram ou o porque
+                acabaram ficando do modo como são.
+              </p>
+              <p class="text-end fs-5 mb-5">
+                Além dos livros escritos e lançados para cada edição, no próprio
+                site do Magic, sempre que uma edição está para ser lançada,
+                trechos desses contos são disponibilizados gratuitamente, para
+                as pessoas poderem entender o que está acontecendo e o porque
+                das cartas serem como são e o que está acontecendo no universo
+                do jogo.
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
     <div id="scripts">
@@ -40,8 +81,9 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"
       ></script>
+      <script src="./js/storage.js"></script>
       <script src="./js/main.js"></script>
-      <script src="./js/search.js"></script>
+      <!-- <script src="./js/search.js"></script> -->
     </div>
   </body>
 </html>

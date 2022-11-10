@@ -25,15 +25,13 @@ const getCard = () =>{
                 let img = document.createElement('img');
 
                 //estilizando
-                $(carta).addClass('card');
-                $(cardBody).addClass('card-body');
-                $(cardHeader).addClass('card-header');
+
+                $(carta).addClass('card mx-2 mb-3');
                 $(li).addClass('col-4');
                 $(listCards).addClass('d-flex');
-                $(img).addClass('p-3');
-                $(cardHeader).addClass('bg-dark');
-                $(carta).addClass('m-2');
-                $(carta).addClass('mb-3');
+                $(cardHeader).addClass('card-header bg-dark');
+                $(cardBody).addClass('card-body');
+                $(img).addClass('p-3 img-fluid img-custom');
 
                 //add classe
                 $(carta).addClass('carta');
@@ -53,7 +51,6 @@ const getCard = () =>{
                 $(a).append(carta);
                 $(li).append(a);
                 $(listCards).append(li)
-
             });
         }
     })
