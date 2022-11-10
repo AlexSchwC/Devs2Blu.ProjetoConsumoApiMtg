@@ -25,12 +25,20 @@ const getCard = () =>{
                 let img = document.createElement('img');
 
                 //estilizando
-                $(carta).addClass('card mx-2 mb-3')
+
+                $(carta).addClass('card mx-2 mb-3');
                 $(li).addClass('col-4');
                 $(listCards).addClass('d-flex');
                 $(cardHeader).addClass('card-header bg-dark');
                 $(cardBody).addClass('card-body');
                 $(img).addClass('p-3 img-fluid img-custom');
+
+                //add classe
+                $(carta).addClass('carta');
+                $(cardBody).addClass('carta-body');
+                $(cardBody).addClass('carta-body');
+                $(img).addClass('img-card');
+                
 
                 //atributos
                 $(img).attr('src', card.image_uris.small);
