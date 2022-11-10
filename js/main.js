@@ -2,8 +2,6 @@ $('document').ready(() => {
     loadHeader();
     loadFooter();
     console.log('header e footer carregados')
-    // let scripts = $('#scripts').html();
-    // $('#scripts').html(scripts);
 })
 
 const getPagina = (page, target) => {

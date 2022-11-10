@@ -9,6 +9,7 @@ $('document').ready(() => {
             console.log(input);
             let result = await pesquisaCard(input);
             window.localStorage.setItem('card-result', JSON.stringify(result));
+            window.location.href = '/views/card.html';
         }
     })
 })

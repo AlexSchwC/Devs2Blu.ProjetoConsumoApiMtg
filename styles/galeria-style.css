@@ -3,8 +3,9 @@
 
 
 *{
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
+
 body{
     background-color: #f0e8e8;
 }
@@ -13,12 +14,12 @@ li{
     list-style: none;
 }
 
-img{
+.img-custom{
     margin-left: 3.5em;
     width: 200px;
 }
 
-img:hover{
+.img-custom:hover{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -41,7 +42,7 @@ img:hover{
     background-color: grey;
 }
 
-h2{
+.card-header > h2 {
     font-size: 23px;
     color: #f0e8e8;
     text-align: center;
