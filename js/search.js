@@ -2,8 +2,11 @@ const BASE_SEARCH_URI = 'https://api.scryfall.com/cards/search?q='
 
 $('document').ready(() => {
     $('#btn-pesquisa-card').click(async (e) => {
+        e.preventDefault();
+        console.log('teste');
         if ($('#input-perquisa-card').val()) {
             let input = $('#input-perquisa-card').val();
+            console.log(input);
             let result = await pesquisaCard(input);
             window.localStorage.setItem('card-result', JSON.stringify(result));
         }

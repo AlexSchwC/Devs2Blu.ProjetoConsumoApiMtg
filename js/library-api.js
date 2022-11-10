@@ -39,7 +39,7 @@ const getCard = () =>{
 
                 //atributos
                 $(img).attr('src', card.image_uris.small);
-                $(li).attr(`card${i}`);
+                $(li).attr('id', `card${i}`);
                 $(cardHeader).html(`<h2>${card.name}</h2>`);
 
                 //append
