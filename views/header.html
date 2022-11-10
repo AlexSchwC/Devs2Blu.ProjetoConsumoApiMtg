@@ -2,7 +2,9 @@
   class="d-flex flex-row align-items-center justify-content-between p-3 custom-header"
 >
   <div class="d-flex flex-row">
-    <h2 class="ms-4 mb-0">Magikards</h2>
+    <a id="a-logo" href="../index.html">
+      <h2 class="ms-4 mb-0">Magikards</h2>
+    </a>
     <button
       id="menubutton"
       class="btn bg-white dropdown-toggle"
@@ -14,9 +16,11 @@
     </button>
     <div class="dropdown">
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Home</a></li>
-        <li><a class="dropdown-item" href="#">Galeria</a></li>
-        <li><a class="dropdown-item" href="./sobre.html">Sobre</a></li>
+        <li><a class="dropdown-item" href="/index.html">Home</a></li>
+        <li>
+          <a class="dropdown-item" href="/views/galeria.html">Galeria</a>
+        </li>
+        <li><a class="dropdown-item" href="/views/sobre.html">Sobre</a></li>
       </ul>
     </div>
   </div>
@@ -36,6 +40,11 @@
 </div>
 <script src="../js/search.js"></script>
 <style>
+  #a-logo {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .custom-header {
     background-color: #111111;
   }
