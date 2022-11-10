@@ -25,6 +25,6 @@ const loadHeader = () => {
     let header = document.createElement('header');
     $(header).addClass('container-fluid align-self-start');
     $(header).attr('id', 'header-container');
-    $('#body-wrapper').append(header);
+    $('#body-wrapper').prepend(header);
     getPagina('../views/header.html', $('#header-container'));
 }
