@@ -7,37 +7,38 @@
 }
 body{
     background-color: #f0e8e8;
+    overflow-x: hidden;
 }
 
 li{
     list-style: none;
 }
 
-img{
+.img-card{
     margin-left: 3.5em;
     width: 200px;
 }
 
-img:hover{
+.img-card:hover{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
 
-.card{
+.carta{
     width: 25vw;
 }
 
-.card-header{
+.carta-header{
     justify-content: center;
     width: 25vw;
 }
 
-.card-body{
+.carta-body{
     width: 25vw;
 }
 
-.card-body:hover{
+.carta-body:hover{
     background-color: grey;
 }
 
@@ -56,4 +57,13 @@ h1{
 
 a{
     text-decoration: none;
+}
+
+.img-about{
+    width: 15vw;
+    height: 15vw;
+}
+
+#card-nos{
+    margin-bottom: 2em;
 }
